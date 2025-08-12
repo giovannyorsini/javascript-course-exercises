@@ -43,5 +43,5 @@ Each folder contains:
 ---
 
 ## 📫 Contact
-- **LinkedIn:** [Your LinkedIn Link](www.linkedin.com/in/giovanny-orsini)
+- **LinkedIn:** [My LinkedIn profile](www.linkedin.com/in/giovanny-orsini)
 - **Email:** gikaorsini@gmail.com
