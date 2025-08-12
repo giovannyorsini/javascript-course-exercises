@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+    <style>
+        button {
+            height: 50px;
+            width: 85px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio das Mensagens</h1>
+    <button type="button" data-btn="1º botão" onclick="handleClick(event)">Botão 1</button>
+    <button type="button" data-btn="2º botão" onclick="handleClick(event)">Botão 2</button>
+    <button type="button" data-btn="3º botão" onclick="handleClick(event)">Botão 3</button>
+    <script>
+        function handleClick(event) {
+            let id = event.target.getAttribute("data-btn");
+            window.alert(`Você clicou no ${id}!`)
+        }
+    </script>
+</body>
+</html>

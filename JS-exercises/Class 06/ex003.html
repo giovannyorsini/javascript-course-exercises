@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgba(137, 43, 226, 0.39);
+            color: whitesmoke;
+            font: bold 25pt times; /*Comentário CSS*/
+        }
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!--Comentário HTML-->
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number(window.prompt("Digite um número: ").replace(",", ".")); //converto uma , para . e depois converto string para number
+        var n2 = Number(window.prompt("Digite outro número: ").replace(",", ".")); //idem
+        var s = n1 + n2;
+        window.alert(`A soma dos valores ${n1.toLocaleString()} e ${n2.toLocaleString()} é igual a ${s.toLocaleString()}`); //converto o resultado de numbers p/ string localizada
+    </script>
+</body>
+</html>

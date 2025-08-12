@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Brasileiro?</h1>
+    Escreva aqui a sua nacionalidade: <input type="text" id="txtpaís">
+    <input type="button" value="Fazer teste" id="a" onclick="checar()">
+    <div id="res">
+
+    </div>
+    <script>
+        let a = document.getElementById("a");
+        a.addEventListener("mousedown", clicou);
+        a.addEventListener("mouseup", soltou);
+        a.addEventListener("mouseover", sobre);
+        function checar() {
+        let nation = document.getElementById("txtpaís").value.trim();
+        let res = document.getElementById("res");
+        res.innerHTML = `<p>Se você nasceu em <strong>${nation.toUpperCase()}</strong></p>`;
+            if (nation.toLowerCase() === "brasil") {
+                res.innerHTML += "Você é <strong>Brasileiro!</strong>";
+            } else {
+                res.innerHTML += "Você é <strong>estrangeiro!</strong>";
+            }
+        
+        }
+        function clicou() {
+            a.style.background = "darkgray";
+        }
+        function soltou() {
+            a.style.background = "";
+        }
+        function sobre() {
+            a.style.cursor = "pointer";
+        }
+    </script>
+</body>
+</html>

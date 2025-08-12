@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #000000ce;
+}
+h1 {
+    color: white;
+    -webkit-text-stroke: 1.5px black
+}
+input.btn {
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(153, 14, 14);
+    border-radius: 10px;
+    border-color: white;
+    border-style: dotted;
+    cursor: pointer;
+}
