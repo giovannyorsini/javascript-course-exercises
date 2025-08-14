@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagens</title>
+    <title>Messages</title>
     <style>
+        body {
+            text-align: center;
+        }
         button {
             height: 50px;
             width: 85px;
@@ -14,15 +17,18 @@
     </style>
 </head>
 <body>
-    <h1>Desafio das Mensagens</h1>
-    <button type="button" data-btn="1º botão" onclick="handleClick(event)">Botão 1</button>
-    <button type="button" data-btn="2º botão" onclick="handleClick(event)">Botão 2</button>
-    <button type="button" data-btn="3º botão" onclick="handleClick(event)">Botão 3</button>
+    <h1>Messages Challange</h1>
+    <button type="button" data-btn="1º button" onclick="handleClick(event)">Button 1</button>
+    <button type="button" data-btn="2º button" onclick="handleClick(event)">Button 2</button>
+    <button type="button" data-btn="3º button" onclick="handleClick(event)">Button 3</button>
+    <footer>
+        <p>&copy;<em>Giovanny_Orsini</em></p>
+    </footer>
     <script>
         function handleClick(event) {
-            let id = event.target.getAttribute("data-btn");
-            window.alert(`Você clicou no ${id}!`)
-        }
+            let id = event.target.getAttribute("data-btn");         //get the data attribute from the clicked button//
+            alert(`You've clicked on ${id}!`);          //show a window alert with a massage and the data attribute from the clicked button//
+        };
     </script>
 </body>
 </html>
