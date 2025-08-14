@@ -2,10 +2,10 @@ body {
     font-family: sans-serif;
     text-align: center;
     background-color: #000000ce;
+    color: white;
 }
 h1 {
-    color: white;
-    -webkit-text-stroke: 1.5px black
+    -webkit-text-stroke: 1.5px black        /*adds an outline to the text*/
 }
 input.btn {
     font-family: sans-serif;
