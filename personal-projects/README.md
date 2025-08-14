@@ -9,8 +9,9 @@ It displays the number of clicks in the center of the page. You can press the **
 - 🎨 Simple and clean design with CSS styling.
 
 ## Screenshot
-[![Click Counter Screenshot](screenshot click-counter.jpg)](click-counter.html)
-
+<a href="click-counter.html">
+    <img src="screenshot click-counter.jpg" alt="Click Counter Screenshot">
+</a>
 > Click the image above to open the project.
 
 ## How to Use
