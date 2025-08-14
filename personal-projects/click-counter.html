@@ -9,9 +9,7 @@
             background: #fafad29d;
             font: normal 30pt times;
             color: #504d32;
-        }
-        header {
-            text-align: center;
+            text-align: center;            
         }
         section {
             display: flex;
@@ -47,20 +45,23 @@
             <input type="button" value="Click" id="count" onclick="Clicked()" onmousedown="mDown()">
             <input type="button" value="Reset" id="rest" onclick="Reset()">
         </div>
-        <script>
-            let res = document.getElementById("res");
-            let count = 0;
-            let button1 = document.getElementById("count");
-            let button2 = document.getElementById("rest");
-            function Clicked() {
-                count++;
-                res.innerHTML = `<p>${count}</p>`
-                }
-            function Reset() {
-                count = 0;
-                res.innerHTML = `<p>${count}</p>`
-            }
-        </script>
     </section>
+    <footer>
+        <p>&copy;<em>Giovanny_Orsini</em></p>
+    </footer>    
+    <script>
+        let res = document.getElementById("res");                        //get the div where the results will appear//
+        let count = 0;                                                   //set the counter to 0 initially//  
+        let button1 = document.getElementById("count");                  //get the button "click"//
+        let button2 = document.getElementById("rest");                   //get the button "reset"//
+        function Clicked() {
+            count++;        //adds 1 to the counter after every click//
+            res.innerHTML = `<p>${count}</p>`;    //update the counter with the current count// 
+            };
+        function Reset() {
+            count = 0;    //set counter to 0//
+            res.innerHTML = `<p>${count}</p>`;    //update the counter//
+        };
+    </script>    
 </body>
 </html>
