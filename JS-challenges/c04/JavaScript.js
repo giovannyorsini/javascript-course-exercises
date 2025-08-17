@@ -1,14 +1,16 @@
 function Click() {
-    let name = window.prompt("Que produto você está comprando?");
-    let val = window.prompt(`Quanto custa ${name.toLowerCase()} que você está comprando?`);
-    let v = Number(val);
-    let pag = window.prompt(`Qual foi o valor que você deu para pagar ${name.toLowerCase()}`);
-    let p = Number(pag);
+    let name = window.prompt("What product are you looking for?");        //popup to ask the name of the product//
+    let val = window.prompt(`How much is the ${name.toLowerCase()} that you are buying?`);        //popup to ask the price of the product//
+    let v = Number(val);            //turns val string into a number//
+    let pag = window.prompt(`How much did you pay for the ${name.toLowerCase()}?`);        //popup to ask how much the user paid for the product//
+    let p = Number(pag);            //turns pag string into a number//
     if (v > p) {
-        alert("Infelizmente você não foi capaz de comprar o item, tente investir um pouco mais.");
+        alert("Unfortunately you were not able to pay for the product, try to invest a little more");
+        //If the value of the product is greater than the amount paid by the user, return a “unfortunately” message//
     } else {
-        alert(`Você comprou ${name.toLowerCase()} que custou R$ ${v},00. 
-Você deu R$ ${p},00 em dinheiro e vai receber R$ ${p-v},00 de troco.
-Volte Sempre!`);
+        alert(`You bought the ${name.toLowerCase()} that cost $ ${v}.00.
+You gave $ ${p}.00 in cash and you'll receive $ ${p-v}.00 in change.
+Welcome back anytime!`);
+        //If the value of the product is less than the amount paid by the user, return a message containing the values and the change at the end//
     };
 };
