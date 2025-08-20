@@ -1,6 +1,6 @@
 function Click() {
     let value = window.prompt("Type a temperature in °C (Celsius)");        //popup asking a number to the user//
-    value = value.replace(",", ".");        //replace commas with a dot//
+    value = value.replace(/,/g, "");        //removes all the commas//
     val = Number(value);            //turns value string into a number//
     let k = val + 273.15        //convert val number to kelvin temperature//
     let f = val * 1.8 + 32        //convert val number to fahrenheit temperature//
