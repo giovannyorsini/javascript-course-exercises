@@ -1,7 +1,7 @@
 function Click() {
     let name = window.prompt("What product are you buying?");        //popup asking for a product name//
     let value = window.prompt(`How much is the ${name.toLowerCase()}`);        //popup asking for a price//
-    value = value.replace(",",".");        //replace the comma with a dot//
+    value = value.replace(/,/g, "");        //remove all the commas//
     let val = Number(value);        //turns value string into a number//
     let res = document.getElementById("res");        //select the HTML div where the results will appear//
     let dis = val * 0.10;        //calculate the discount//
@@ -16,3 +16,4 @@ function Click() {
     <p>Then, you will pay ${valdStr} in the ${name.toLowerCase()}</p>
     `;        //shows the original price, then the value of 10% of discount and then the last price after the discount//
 };
+
