@@ -1,6 +1,6 @@
 function Click() {
     let value = window.prompt("Enter a distance in meters (m)");    //asks a number from user//
-    value = value.replace(",", ".");        //replace , with .//
+    value = value.replace(/,/g, "");        //replace , with .//
     let val = Number(value);        //turns value string into a number//
     let km = val / 1000;        //                                         //
     let hm = val / 100;         //                                         //
