@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,12 @@
 </head>
 <body>
     <script>
-let n1 = window.prompt("Qual o seu nome?");
-let n2 = window.prompt("Digite outro nome:");
-let n1WS = n1.replace(/\s/g, "");    //Remove os espaços da contagem de letras
-let n2WS = n2.replace(/\s/g, "");
-let s = n1WS.length + n2WS.length;
-window.alert(`A soma da quantidade de letras entre ambos os nomes ${n1} e ${n2} é: ${s.toLocaleString()}`); //Apresenta a soma das letras
+let name1 = window.prompt("What is your name?");
+let name2 = window.prompt("Enter another name: ");
+let n1WS = name1.replace(/\s/g, "");    // remove the spaces of the string (name1WithoutSpaces)
+let n2WS = name2.replace(/\s/g, "");
+let sum = n1WS.length + n2WS.length;
+window.alert(`The sum of the letters from ${name1} and ${name2} is: ${sum.toLocaleString()}`);     // shows the sum of the letters
     </script>
 </body>
 </html>
