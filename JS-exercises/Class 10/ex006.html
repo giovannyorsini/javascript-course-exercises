@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos DOM</title>
+    <title>DOM Events</title>
     <style>
         div#area {
             font: normal 20pt Arial;
@@ -13,29 +13,29 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div id="area">
-        Interaja...
+        Interact...
     </div>
-
     <script>
         var a = document.getElementById("area")
-        a.addEventListener("click", clicar)
-        a.addEventListener("mouseenter", entrar)
-        a.addEventListener("mouseout", sair)
+        a.addEventListener("click", click)
+        a.addEventListener("mouseenter", enter)
+        a.addEventListener("mouseout", left)
 
-function clicar() {
-a.innerText = "Clicou!"
+function click() {
+a.innerText = "You clicked!"
 a.style.background = "red"
 }
-function entrar() {
-a.innerText = "Entrou!"
+function enter() {
+a.innerText = "You entered!"
 }
-function sair() {
-    a.innerText = "saiu!"
+function left() {
+    a.innerText = "You left!"
     a.style.background = "rgb(245, 245, 220)"
 }
     </script>
