@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando Números</title>
+    <title>Adding Numbers</title>
     <style>
         body {
             font: normal 18pt Arial;
@@ -19,32 +19,32 @@
 </head>
 <body>
     <h1>
-        Somando Valores
+        adding values
     </h1>
     <input type="number" name="txtn1" id="txtn1"> +
         <input type="number" name="txtn2" id="txtn2">
-            <input type="button" value="Somar" onclick="somar()" id="sum">
+            <input type="button" value="Sum" onclick="sum()" id="sum">
     <div id="res">
-        Resultado
+        Results...
     </div>
     <script>
         let a = document.getElementById("sum")
-        a.addEventListener("mousedown", saiu)
-        a.addEventListener("mouseup", levantou)
+        a.addEventListener("mousedown", click)
+        a.addEventListener("mouseup", release)
         a.addEventListener("mouseover", pointer)
-        function somar() {
-            var tn1 = window.document.getElementById("txtn1")
-            var tn2 = window.document.querySelector("input#txtn2")
-            var res = window.document.getElementById("res")
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
-            var s = n1 + n2
-            res.innerHTML = `A soma entre <strong>${n1}</strong> e <strong>${n2}</strong> é igual a <strong>${s}</strong>`
+        function sum() {
+            let tn1 = window.document.getElementById("txtn1")
+            let tn2 = window.document.querySelector("input#txtn2")
+            let res = window.document.getElementById("res")
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+            let sum = n1 + n2
+            res.innerHTML = `The sum of <strong>${n1}</strong> and <strong>${n2}</strong> results in <strong>${sum}</strong>`
         }
-        function saiu() {
+        function click() {
             a.style.background = "darkgray"
         }
-        function levantou() {
+        function release() {
             a.style.background = ""
         }
         function pointer() {
