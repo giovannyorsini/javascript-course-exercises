@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Sistemas de Multas</h1>
-    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
-    <input type="button" value="Verificar" onclick="calcular()">
+    <h1>fine system</h1>
+    Car's speed: <input type="number" name="txtvel" id="txtvel"> mph
+    <input type="button" value="Verify" onclick="calculate()">
     <div id="res">
 
     </div>
     <script>
-        function calcular() {
-            var txtv = window.document.getElementById("txtvel");
-            var res = window.document.querySelector("div#res");
-            var vel = Number(txtv.value);
-            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p>`;
-            if (vel > 60) {
-                res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>`
+        function calculate() {
+            let txtv = window.document.getElementById("txtvel");
+            let res = window.document.querySelector("div#res");
+            let speed = Number(txtv.value);
+            res.innerHTML = `<p>Your actual speed is <strong>${speed} mph</strong></p>`;
+            if (speed > 60) {
+                res.innerHTML += `<p>Your are <strong>FINED</strong> for speeding</p>`
             }
-            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`;
+            res.innerHTML += `<p>Drive always wearing seatbelts!</p>`;
         }
     </script>
 </body>
