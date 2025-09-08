@@ -1,9 +1,9 @@
-var idade = 67;
-console.log(`Você tem ${idade} anos.`);
-if (idade < 16) {
-    console.log("Não vota");
+let age = 67;
+console.log(`You are ${age} years old.`);
+if (age < 16) {
+    console.log("Can't vote");
 } else if (idade < 18 || idade > 65) {
-        console.log("Voto opcional");
+        console.log("Optional vote");
     } else {
-        console.log("Voto obrigatório");
-    }
+        console.log("Mandatory vote");
+    }        // This program is based on the Brazilian voting system
