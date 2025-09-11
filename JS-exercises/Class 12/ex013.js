@@ -1,36 +1,36 @@
-var agora = new Date();
-var diaSem = agora.getDay();
+let now = new Date();
+let weekDay = now.getDay();
 /*
-    0 == Domingo
-    1 == Segunda
-    2 == terça
-    3 == Quarta
-    4 == Quinta
-    5 == Sexta
-    6 == Sábado
+    0 == Sunday
+    1 == Monday
+    2 == Tuesday
+    3 == Wednesday
+    4 == Thurdays
+    5 == Friday
+    6 == Saturday
 */
-switch (diaSem) {
+switch (weekDay) {
     case 0:
-        console.log("Domingo");
+        console.log("Sunday");
         break
     case 1:
-        console.log("Segunda");
+        console.log("Monday");
         break
     case 2:
-        console.log("Terça");
+        console.log("Tuesday");
         break
     case 3:
-        console.log("Quarta");
+        console.log("Wednesday");
         break
     case 4:
-        console.log("Quinta");
+        console.log("Thursday");
         break
     case 5:
-        console.log("Sexta");
+        console.log("Friday");
         break
     case 6:
-        console.log("Sábado");
+        console.log("Saturday");
         break     
     default:
-        console.log("[ERRO] Dia inválido!")   
+        console.log("[ERROR] Invalid date!")   
 }
