@@ -1,11 +1,11 @@
-/*let c = 1;
-while (c <= 5) {
-    console.log(c);
-    c++;
-};
-*/
- console.log("Vai começar...")
-for (let c = 1;c <= 4;c++) {
-    console.log(c);
-};
-console.log("FIM!");
+/* let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
+} */
+ console.log("It will start in...");
+for (let i = 1; i <= 4; i++) {
+    console.log(i);
+}
+
+console.log("END!");
