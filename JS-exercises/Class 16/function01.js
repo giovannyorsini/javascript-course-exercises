@@ -1,8 +1,9 @@
-function parimpar(n) {
-    if (n % 2 == 0) {
-        return "Par!";
-    } else {
-        return "Ímpar!";
-    };
-};
-console.log(parimpar(223));
+function evenOdd(number) {
+  if (number % 2 == 0) {
+    return "Even!";
+  } else {
+      return "Odd!";
+  }
+}
+
+console.log(evenOdd(223));
