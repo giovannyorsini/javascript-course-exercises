@@ -1,4 +1,5 @@
-let v = function(x) {
-    return x*2;
-};
-console.log(v(5));
+let value = function(x) {
+  return x * 2;
+}
+
+console.log(value(5));
