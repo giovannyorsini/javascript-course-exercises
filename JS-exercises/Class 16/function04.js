@@ -1,8 +1,9 @@
-function fatorial(n) {
-    let fat = 1;
-    for(let c = n; c > 1; c--) {
-        fat *= c;
-    };
-    return fat;
-};
-console.log(fatorial(5));
+function factorial(number) {
+  let fac = 1;
+  for(let i = number; i > 1; i--) {
+    fac *= i;
+  }
+  return fac;
+}
+
+console.log(factorial(5));
