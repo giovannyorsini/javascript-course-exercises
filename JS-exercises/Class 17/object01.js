@@ -1,12 +1,13 @@
-let amigo = {
-    nome: "José",
-    sexo: "M",
-    peso: 85.4,
-    engordar(p) {
-        console.log("Engordou")
-        this.peso += p
-    }
-};
-amigo.engordar(2);
-console.log(typeof amigo);
-console.log(amigo.peso);
+let friend = {
+  name: "José",
+  sex: "M",
+  weight: 85.4,
+  fattening(w) {
+    console.log("Gained weight");
+    this.weight += w;
+  }
+}
+friend.fattening(2);
+console.log(typeof friend);
+
+console.log(friend.weight);
