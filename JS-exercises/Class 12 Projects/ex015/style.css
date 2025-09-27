@@ -2,10 +2,12 @@ body {
     background: lightblue;
     font: normal 15pt Times;
 }
+
 header {
     color: white;
     text-align: center;
 }
+
 section {
     background: white;
     border-radius: 10px;
@@ -14,6 +16,7 @@ section {
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
 }
+
 footer {
     color: black;
     text-align: center;
