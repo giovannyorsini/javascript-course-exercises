@@ -1,57 +1,63 @@
 let num = document.querySelector("input#fnum");
-let lista = document.querySelector("select#flista");
+let list = document.querySelector("select#flist");
 let res = document.querySelector("div#res");
-let valores = [];
-function isNumero(n) {
-    if(Number(n) >= 1 && Number(n) <= 100) {
-        return true;
-    } else {
-        return false;
-    };
-};
-function inLista(n, l) {
-    if (l.indexOf(Number(n)) != -1) {
-        return true;
-    } else {
-        return false;
-    };
-};
-function adicionar() {
-    if (isNumero(num.value) && !inLista(num.value, valores)) {
-        valores.push(Number(num.value));
-        let item = document.createElement("option");
-        item.text = `valor ${num.value} adicionado`;
-        lista.appendChild(item);
-        res.innerHTML = "";
-    } else {
-        alert("Valor inválido ou já encontrado na lista.");
-    };
-    num.value = "";
-    num.focus();
-};
-function finalizar() {
-    if (valores.length == 0) {
-        alert("Adicione valores antes de finalizar!")
-    } else {
-        let tot = valores.length;
-        let maior = valores[0];
-        let menor = valores[0];
-        let soma = 0;
-        let media = 0;
-        for (let pos in valores) {
-            soma += valores[pos];
-            if (valores[pos] > maior) {
-                maior = valores[pos];
-            } else if (valores[pos] < menor) {
-                menor = valores[pos];
-            };
-        };
-        media = soma / tot;
-        res.innerHTML = "";
-        res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`;
-        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`;
-        res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`;
-        res.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`;
-        res.innerHTML += `<p>A média dos valores digitados é ${media.toLocaleString()}.</p>`;
-    };
-};
+let values = [];
+
+function isNumber(n) {
+  if(Number(n) >= 1 && Number(n) <= 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function inList(n, l) {
+  if (l.indexOf(Number(n)) != -1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function add() {
+  if (isNumber(num.value) && !inList(num.value, valores)) {
+    values.push(Number(num.value));
+    let item = document.createElement("option");
+    item.text = `Value ${num.value} added`;
+    list.appendChild(item);
+    res.innerHTML = "";
+  } else {
+    alert("Invalid value or already found in list");
+  }
+  num.value = "";
+  num.focus();
+}
+
+function finish() {
+  if (values.length == 0) {
+    alert("Add values before finishing!")
+  } else {
+    let total = values.length;
+    let highest = values[0];
+    let lowest = values[0];
+    let sum = 0;
+    let average = 0;
+    
+    for (let position in values) {
+      sum += values[position];
+      if (values[position] > highest) {
+        highest = values[position];
+      } else if (values[position] < lowest) {
+        lowest = values[position];
+      }
+    }
+
+    average = sum / total;
+    res.innerHTML = "";
+    res.innerHTML += `<p>In total, we have ${total} registered numbers.</p>`;
+    res.innerHTML += `<p>The highest informed value was ${highest}.</p>`;
+    res.innerHTML += `<p>The lowest informed value was ${lowest}.</p>`;
+    res.innerHTML += `<p>Adding all the values, we have ${sum}.</p>`;
+    res.innerHTML += `<p>The average of the values ​​entered is ${average.toLocaleString()}.</p>`;
+  }
+}
