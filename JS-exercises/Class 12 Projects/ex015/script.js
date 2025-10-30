@@ -22,22 +22,22 @@ function verify() {
     res.appendChild(img);
   } else {
     if (fsex[0].checked) {
-      gênero = "Homem";
-      if (idade >= 0 && idade < 10) {
-        //criança
-        img.setAttribute("src", "bebe_m.png");
-      } else if (idade < 21) {
-        //jovem
-        img.setAttribute("src", "jovem_m.png");
-      } else if (idade < 50) {
-        //adulto
-        img.setAttribute("src", "adulto_m.png");
+      sex = "Man";
+      if (age >= 0 && age < 10) {
+        //child
+        img.setAttribute("src", "baby_m.png");
+      } else if (age < 21) {
+        //young
+        img.setAttribute("src", "young_m.png");
+      } else if (age < 50) {
+        //adult
+        img.setAttribute("src", "adult_m.png");
       } else {
-        //idoso
-        img.setAttribute("src", "idoso_m.png");
+        //elderly
+        img.setAttribute("src", "elderly_m.png");
       }
     } else if (fsex[1].checked) {
-      gênero = "Mulher";
+      sex = "Woman";
       if (idade >= 0 && idade < 10) {
         //criança
         img.setAttribute("src", "bebe_f.png");
