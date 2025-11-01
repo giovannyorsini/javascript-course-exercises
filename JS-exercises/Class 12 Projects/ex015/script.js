@@ -1,7 +1,7 @@
 function verify() {
   let date = new Date();
   let year = data.getFullYear();
-  let fyear = document.getElementById("txtano");
+  let fyear = document.getElementById("txtyear");
   let res =  document.getElementById("res");
   let fsex = document.getElementsByName("radsex");
   let age = year - Number(fyear.value);
@@ -38,22 +38,22 @@ function verify() {
       }
     } else if (fsex[1].checked) {
       sex = "Woman";
-      if (idade >= 0 && idade < 10) {
-        //criança
-        img.setAttribute("src", "bebe_f.png");
+      if (age >= 0 && age < 10) {
+        //child
+        img.setAttribute("src", "baby_f.png");
       } else if (idade < 21) {
-        //jovem
-        img.setAttribute("src", "jovem_f.png");
+        //young
+        img.setAttribute("src", "young_f.png");
       } else if (idade < 50) {
-        //adulto
-        img.setAttribute("src", "adulto_f.png");
+        //adult
+        img.setAttribute("src", "adult_f.png");
       } else {
-        //idoso
-        img.setAttribute("src", "idoso_f.png");
+        //elderly
+        img.setAttribute("src", "elderly_f.png");
       }
     } 
       res.style.textAlign = "center";
-      res.innerHTML = `<p>Detectamos ${gênero} com ${idade} anos</p>`;
+      res.innerHTML = `<p>We've detected a ${sex} of ${age} years old</p>`;
       res.appendChild(img);
   } 
 }
